@@ -1,0 +1,23 @@
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 54rem;
+  left: 5rem;
+  position: absolute;
+  top: 42rem;
+}
+.btn{
+  width: 3rem;
+  height: 3rem;
+  background-color: aqua;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  
+}
+.btn:hover{
+background-color: rgba(122, 122, 122, 0.788);
+}

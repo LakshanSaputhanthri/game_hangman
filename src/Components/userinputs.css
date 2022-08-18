@@ -1,0 +1,51 @@
+.userinput-container1{
+  position: absolute;
+  background-color: transparent;
+  width: 24.3rem;
+  height: 6rem;
+  left: 35rem;
+  top: 31rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+.userinput-container2{
+  position: absolute;
+  background-color: transparent;
+  width: 24rem;
+  height: 3rem;
+  left: 35rem;
+  top: 38rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+.counter{
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  left:53rem;
+  top:16rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
