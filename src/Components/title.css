@@ -1,0 +1,9 @@
+.title {
+  color: darkmagenta;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 3rem;
+
+}

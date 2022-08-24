@@ -1,32 +1,26 @@
-import React,{useReducer} from 'react'
-import Buttons from './Buttons'
-import "./userinputs.css"
-function reducer(state,{type,payload}){
-  console.log("log")
-  switch(type){
-    case "add-letter":
-      return{
-        ...state,
-        word:state.word+payload
-      }
-  }
-    
-}
-const Userinputs = () => {
-  const[{word,quection,counter},dispatch]=useReducer(reducer,{})
-  return (
-   <div>
-     <div className="counter">
-       {counter}
-     </div>
-    <span className='userinput-container1'>
-      {quection}
-    </span>
-    <input className='userinput-container2'>
-      {word}
-    </input>
-    </div>
-  )
-}
+import React from "react";
+import QandA from "./QandA.json";
+import "./userinputs.css";
 
-export default Userinputs
+const Userinputs = (props) => {
+  const state = props.state;
+  const dispatch = props.dispatch;
+
+  //console.log(state);
+  return (
+    <div>
+      <div className="counter-1">{state.counter}</div>
+      <div className={`result ${state.clz} `}>{state.result}</div>
+      <span className="userinput-container1">
+        {QandA[state.index].question}
+      </span>
+      <span className="userinput-container2" onChange={(e)=>dispatch({type:'check', payload:e.target.value})}>{state.word}</span>
+      <div className="btna">
+        <button onClick={() => dispatch({ type: "restart" })}>Restart</button>
+        <button onClick={() => dispatch({ type: "next" })}>Next</button>
+      </div>
+    </div>
+  );
+};
+
+export default Userinputs;
